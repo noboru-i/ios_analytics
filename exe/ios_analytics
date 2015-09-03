@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require 'ios_analytics'
+require 'ios_analytics/cli'
+
+IosAnalytics::CLI.start

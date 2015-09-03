@@ -1,5 +1,5 @@
 require "ios_analytics/version"
+require "ios_analytics/translate"
 
 module IosAnalytics
-  # Your code goes here...
 end
