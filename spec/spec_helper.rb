@@ -1,2 +1,5 @@
-$LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
-require 'ios_analytics'
+require 'coveralls'
+Coveralls.wear!
+
+require 'bundler'
+Bundler.require :default, :development
