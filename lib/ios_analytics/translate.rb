@@ -4,7 +4,6 @@ require 'rexml/document'
 module IosAnalytics
   module Translate
     def trans(checkstyle_dom, plist_file)
-      puts plist_file
       result = Plist::parse_xml(plist_file)
       return nil if result['files'].empty?
 
