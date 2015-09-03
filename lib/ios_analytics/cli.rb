@@ -1,4 +1,5 @@
 require 'thor'
+require 'pathname'
 
 module IosAnalytics
   class CLI < Thor
