@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = 'Translate plist format into checkstyle format.'
   spec.description   = 'Translate plist format into checkstyle format.'
-  spec.homepage      = 'https://github.com/noboru-i/findbugs_translate_checkstyle_format'
+  spec.homepage      = 'https://github.com/noboru-i/ios_analytics'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
