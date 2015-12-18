@@ -3,17 +3,17 @@ require 'rexml/document'
 
 module IosAnalytics
   module Translate
-    def trans(derivedData, appName)
+    def trans(derived_data, app_name)
       doc = REXML::Document.new
       doc << REXML::XMLDecl.new('1.0', 'UTF-8')
 
       checkstyle = doc.add_element('checkstyle')
 
-      path = Pathname.new(derivedData)
+      path = Pathname.new(derived_data)
         .join(
           'Build',
           'Intermediates',
-          "#{appName}.build",
+          "#{app_name}.build",
           '**',
           'StaticAnalyzer',
           '**',
@@ -60,6 +60,5 @@ module IosAnalytics
 
       checkstyle
     end
-
   end
 end
